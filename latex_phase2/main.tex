@@ -1,0 +1,29 @@
+% !TEX program = xelatex
+\documentclass[10pt]{article}
+
+\def \ANumber {7}
+\def \DueDate {۱۴۰۰/۸/۲۹}
+
+\input{commonmacros}
+
+\input{packages}
+\input{commands}
+\input{firstpage}
+\setlength{\tabcolsep}{18pt}
+\setlength\extrarowheight{10pt}
+
+\begin{document}
+	
+	
+\input{general}\newpage
+
+\tableofcontents
+% \listoftables
+% \listoffigures
+\newpage
+
+
+\input{body}
+
+
+\end{document}

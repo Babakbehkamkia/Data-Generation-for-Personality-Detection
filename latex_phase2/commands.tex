@@ -1,0 +1,60 @@
+
+\setminted{
+    frame=lines,
+    framesep=2mm,
+    baselinestretch=1.0,
+    xrightmargin=0in,
+    xleftmargin=0in,
+    fontsize=\footnotesize,
+    bgcolor=aliceblue,
+    linenos=true
+}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=black,
+}
+
+%---------------------------------define color-------------------------------
+\definecolor{gray}{rgb}{0.4,0.4,0.4}
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.4,0.4,0.4}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\definecolor{mygray}{rgb}{0.9,0.9,0.9}
+\definecolor{myCyan}{rgb}{0,1,1}
+\definecolor{navyBlue}{HTML}{0a065d}
+\definecolor{aliceblue}{rgb}{0.94, 0.97, 1.0}
+\definecolor{light-gray}{gray}{0.90}
+%----------------------------------------------------------------------------
+
+\newcommand{\alert}{\textbf{\color{red}توجه:}}
+\newcommand{\boldBlueInfo}[1]{\textbf{\color{blue}#1}}
+\newcommand{\boldGreenInfo}[1]{\textbf{\color{ForestGreen}#1}}
+
+
+
+
+\newcommand{\sampleInputOutput}[2]{
+    \begin{center}
+        \LTR
+        \renewcommand{\arraystretch}{1}
+        \begin{tabu} to 1.0\textwidth { | X[l] | X[l] | }
+            \hline
+            \rowfont{\color{navyBlue}}
+            \rowcolor{gray!10}
+            \begin{center}
+                \textbf{\rl{ورودی نمونه}}
+            \end{center}
+            & \begin{center}
+                \textbf{\rl{خروجی نمونه}}
+            \end{center} \\
+            \hline
+            \lr{\texttt{#1}} &
+            \lr{\texttt{#2}}                             \\
+            \hline
+        \end{tabu}
+        \RTL
+    \end{center}
+}
